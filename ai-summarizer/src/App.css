@@ -75,3 +75,7 @@
 .black_btn {
     @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
   }
+
+  .head_text {
+    @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
+  }
