@@ -38,8 +38,13 @@ const Demo = () => {
       const newArticle = { ...article, summary: data.summary };
       const updatedAllArticles = [newArticle, ...allArticles];
 
+
+      // update state and local storage
+      setArticle(newArticle);
+      setAllArticles(updatedAllArticles);
+      localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
     }
-  }
+  };
 
   return (
     <div>Demo</div>
