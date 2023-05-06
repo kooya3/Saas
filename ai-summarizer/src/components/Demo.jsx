@@ -17,6 +17,17 @@ const Demo = () => {
   // RTK lazy Query
 /*   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery(); */
   
+  // Load data from Local Storage on Mount
+  useEffect(() => {
+    const articlesFromLocalStorage = JSON.parse(
+      localStorage.getItem("articles")
+    );
+  }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  }
+
   return (
     <div>Demo</div>
   )
