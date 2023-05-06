@@ -46,6 +46,13 @@ const Demo = () => {
     }
   };
 
+  // copy the url and toggle the icon for user feedback
+  const handleCopy = (copyUrl) => {
+    setCopied(copyUrl);
+    navigator.clipboard.writeText(copyUrl);
+    setTimeout(() => setCopied(false), 3000);
+  }
+
   return (
     <div>Demo</div>
   )
