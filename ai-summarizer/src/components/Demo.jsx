@@ -13,6 +13,9 @@ const Demo = () => {
 
   const [allArticles, setAllArticles] =useState([]);
   const [copied, setCopied] = useState("");
+
+  // RTK lazy Query
+/*   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery(); */
   
   return (
     <div>Demo</div>
