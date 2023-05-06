@@ -1,19 +1,34 @@
-import React from 'react'
-import { logo } from '../assets';
+import React from "react";
+
+import { logo } from "../assets";
 
 const Hero = () => {
   return (
-    <header className="w-full flex justify-center items-center flex-col">
-    <nav className="flex justify-between items-center flex-col">
-      <img src={logo} alt="sam_logo" className="w-28 object-contain" />
-      <button 
-      type="button"
-      onClick={() => window.open('https://github.com/kooya3')}
-      className="black_btn"
-      >Github</button>
-    </nav>
-    </header>
-  )
-}
+    <header className='w-full flex justify-center items-center flex-col'>
+      <nav className='flex justify-between items-center w-full mb-10 pt-3'>
+        <img src={logo} alt='sumz_logo' className='w-28 object-contain' />
 
-export default Hero
+        <button
+          type='button'
+          onClick={() =>
+            window.open("https://github.com/TidbitsJS/Summize", "_blank")
+          }
+          className='black_btn'
+        >
+          GitHub
+        </button>
+      </nav>
+
+      <h1 className='head_text'>
+        Summarize any Articles with <br className='max-md:hidden' />
+        <span className='orange_gradient '>a GPT-4 engine</span>
+      </h1>
+      <h2 className='desc'>
+        Simplify your reading with <span className="luminous_gradient">Sam,</span> an open-source article summarizer
+        that transforms lengthy articles into clear and concise summaries
+      </h2>
+    </header>
+  );
+};
+
+export default Hero;
