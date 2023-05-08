@@ -24,7 +24,7 @@ const Hero = () => {
         <span className='orange_gradient '>a GPT-4 engine</span>
       </h1>
       <h2 className='desc'>
-        Simplify your reading with <span className="luminous_gradient">Sam,</span> an open-source article summarizer
+      <span className="luminous_gradient">Simplify your reading with Sam,</span> an open-source article summarizer
         that transforms lengthy articles into clear and concise summaries
       </h2>
     </header>
