@@ -69,6 +69,19 @@ const Demo = () => {
         </button>
       </form>
 
+      <div className="flex flex-col gap-1 max-h-60 overflow-y-auto">
+        {allArticles.map((item, index) => (
+          <div
+          key={`link-${index}`}
+          onClick={() => setArticle(item)}
+          className="link_card"
+          >
+
+        </div>
+      ))}
+
+
+
          </div>
   </section>
   )
