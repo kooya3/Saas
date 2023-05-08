@@ -13,8 +13,12 @@ const Demo = () => {
 
   useEffect(() => {
     const articlesFromLocalStorage = JSON.parse(
-      localStorage.getItem('articles');
+      localStorage.getItem('articles')
     )
+
+    if(articlesFromLocalStorage) {
+      setAllArticles(articlesFromLocalStorage)
+    }
   }, []);
 
   const handleSubmit = async (e) => {
