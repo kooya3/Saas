@@ -4,12 +4,13 @@
 **Sam** is a full-stack web application built to leverage AI technology for website summarization. Users can simply paste the link of any website into the integrated textbox to receive a summarized overview of its content.
 
 ## Technologies Used
+```
 - AI
 - ReactJS
 - SaaS
 - Summarization
 - ViteJS
-
+```
 ## Description
 **Sam** revolutionizes the way users consume online content by providing instant summaries of websites. Our AI-powered platform seamlessly scrapes and analyzes website data, delivering concise summaries tailored to user information needs. Say goodbye to lengthy articles and cluttered webpages – **Sam** simplifies online research with its intuitive interface and powerful summarization capabilities.
 
