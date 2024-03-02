@@ -38,7 +38,7 @@ export async function POST(req){
         const checkoutUrl = response.data.data.attributes.url
         console.log(response.data)
 
-        return Response.json{ checkoutUrl }
+        return Response.json( checkoutUrl )
 
     } catch(error) {
         console.error(error);
