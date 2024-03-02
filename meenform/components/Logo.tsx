@@ -7,7 +7,7 @@ function Logo() {
       href={"/"}
       className="font-bold text-xl bg-primary text-transparent bg-clip-text hover:cursor-pointer"
     >
-      PageForm
+      MeenForm
     </Link>
   );
 }

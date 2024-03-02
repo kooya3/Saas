@@ -23,7 +23,7 @@ export default function Home() {
         <CardStatsWrapper />
       </Suspense>
       <Separator className="my-6" />
-      <h2 className="text-4xl font-bold col-span-2">Your forms</h2>
+      <h2 className="text-2xl font-bold col-span-2">Your forms</h2>
       <Separator className="my-6" />
       <div className="grid gric-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <CreateFormButton />
@@ -69,7 +69,7 @@ function StatsCards(props: StatsCardProps) {
         helperText="All time form submissions"
         value={data?.submissions.toLocaleString() || ""}
         loading={loading}
-        className="shadow-md shadow-yellow-600"
+        className="shadow-md shadow-blue-600"
       />
 
       <StatsCard
@@ -78,7 +78,7 @@ function StatsCards(props: StatsCardProps) {
         helperText="Visits that result in form submission"
         value={data?.submissionRate.toLocaleString() + "%" || ""}
         loading={loading}
-        className="shadow-md shadow-green-600"
+        className="shadow-md shadow-blue-600"
       />
 
       <StatsCard
@@ -115,7 +115,7 @@ export function StatsCard({
         {icon}
       </CardHeader>
       <CardContent>
-        <div className="text-2xl font-bold">
+        <div className="text-xl font-bold">
           {loading && (
             <Skeleton>
               <span className="opacity-0">0</span>

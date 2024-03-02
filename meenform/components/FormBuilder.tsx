@@ -47,7 +47,7 @@ function FormBuilder({ form }: { form: Form }) {
 
   if (!isReady) {
     return (
-      <div className="flex flex-col items-center justify-center w-full h-full">
+      <div className="flex flex-col items-center justify-center w-full h-full py-40">
         <ImSpinner2 className="animate-spin h-12 w-12" />
       </div>
     );
