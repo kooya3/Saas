@@ -1,4 +1,4 @@
-# Sam
+# Meet Sam
 
 ## Introduction
 **Sam** is a full-stack web application built to leverage AI technology for website summarization. Users can simply paste the link of any website into the integrated textbox to receive a summarized overview of its content.
